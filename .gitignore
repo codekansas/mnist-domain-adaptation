@@ -1,0 +1,22 @@
+# gitignore
+
+# virtualenv
+venv/
+
+# ide
+.idea/
+
+# etc
+*.pyc
+.DS_Store
+
+# big files
+*.h5
+*.png
+data/
+
+# prog specific
+.scores.txt
+images/
+models/
+
