@@ -161,10 +161,9 @@ if __name__ == '__main__':
                 predict_pred = predict_prob.round()
                 _, adapt_pred = adapt_prob.max(-1)
 
-            # Computes accuracy of each parts.
+            # Computes accuracy and logs it.
             adapt_acc = torch_accuracy(adapt_pred, adapt_variable)
             predict_acc = torch_accuracy(predict_pred, predict_variable)
-
             metrics['Adapt Accuracy'].append(adapt_acc)
             metrics['Predict Accuracy'].append(predict_acc)
 
